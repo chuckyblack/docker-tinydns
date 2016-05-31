@@ -10,6 +10,7 @@ RUN dnscache-conf dnscache dnslog /etc/dnscache 0.0.0.0
 RUN echo "127.0.0.1" > /etc/dnscache/root/servers/dev
 RUN touch /etc/dnscache/root/ip/192
 RUN touch /etc/dnscache/root/ip/172
+RUN touch /etc/dnscache/root/ip/10
 RUN ln -s /etc/tinydns /etc/service/tinydns
 RUN ln -s /etc/dnscache /etc/service/dnscache
 COPY init.sh /scripts/init.sh
